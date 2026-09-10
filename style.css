@@ -1,0 +1,93 @@
+/* Website variables */
+:root {
+    --FG: #222222;
+    --BG: #f4f4f4;
+    --WL: 1px;
+    --PAGE_WIDTH: 800px;
+
+    --BIG: 4rem;
+    --MED: 2rem;
+    --SML: 1rem;
+    --QRT: 0.25rem;
+    --TNY: 0.125rem;
+}
+
+/* Pink background makes it easy to see that the style sheet is working. */
+html {
+    background: pink;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--BG);
+    color: var(--FG);
+
+    max-width: var(--PAGE_WIDTH);
+    margin: var(--MED) auto;
+    padding: var(--SML);
+
+    line-height: 1.6;
+    border: var(--WL) solid red;
+}
+
+header {
+    border: var(--WL) solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--MED);
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    border: var(--WL) solid red;
+    margin-top: 0;
+    margin-bottom: var(--SML);
+    padding: var(--SML);
+}
+
+nav {
+    border: var(--WL) solid red;
+    padding: var(--SML);
+    text-align: center;
+}
+
+nav a {
+    margin: 0 var(--QRT);
+}
+
+main {
+    border: var(--WL) solid red;
+    padding: var(--MED);
+}
+
+footer {
+    border: var(--WL) solid red;
+    padding: var(--SML);
+    text-align: center;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    margin-top: 35px;
+}
+
+a {
+    color: #2457c5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
