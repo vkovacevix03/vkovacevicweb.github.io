@@ -1,4 +1,4 @@
-/* Website variables */
+
 :root {
     --FG: #222222;
     --BG: #f4f4f4;
@@ -12,7 +12,6 @@
     --TNY: 0.125rem;
 }
 
-/* Pink background makes it easy to see that the style sheet is working. */
 html {
     background: pink;
 }

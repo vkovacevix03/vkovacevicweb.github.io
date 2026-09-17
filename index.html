@@ -3,70 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>My Personal Website</title>
-
+    <meta name="description" content="A personal web development project">
+    <title>Web Development</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <header>
+    <header class="site-header">
         <h1>Web Development</h1>
-
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#interests">Interests</a>
-            <a href="#photo">Photo</a>
-            <a href="#links">Links</a>
-            <a href="#updates">Recent Updates</a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="current" href="index.html">Home</a>
+            <a href="vojin.html">Vojin's Page</a>
+            <a href="content.html">Content I Like</a>
+            <a href="index.txt">Text Page</a>
+            <a href="static/s/colophon.txt">Colophon</a>
         </nav>
     </header>
 
     <main>
+        <section class="intro-card">
+            <h2>Welcome</h2>
+            <p>
+                This is the main page of my web development project. 
+            </p>
+        </section>
 
-        <h2 id="about">About Me</h2>
+        <section aria-labelledby="photo-heading">
+            <h2 id="photo-heading">Serbia</h2>
+            <figure class="image-frame">
+                <img src="static/images/serbia.png" alt="Serbian flag " width="600">
 
-        <p>
-            Hello! My name is Vojin Kovacevic.
-            I study at OCU and I graduate in May 2027.
-            Welcome to my personal blissfull adventure to create a website.
-        </p>
+            </figure>
+        </section>
 
-        <h2 id="interests">I am mostly intrested in rowing and rubix cubes. Besides that, I am pretty boring.</h2>
+        <section aria-labelledby="explore-heading">
+            <h2 id="explore-heading">Explore!</h2>
+            <div class="link-grid">
+                <a class="link-card" href="vojin.html">
+                    <strong>Vojin's Page</strong>
+                    <span>Learn about Vojin Kovacevic's current interests, rowing, and online links.</span>
+                </a>
 
-        <ul>
-            <li>Rowing</li>
-            <li>Rubix cubes</li>
-            <li>Serbia stronk (do not google that)</li>
-            <li>Working out (aerobically, not really a gym guy)</li>
-        </ul>
+                <a class="link-card" href="content.html">
+                    <strong>Content I Like</strong>
+                    <span>Open my Serbian music and rowing video playlists.</span>
+                </a>
 
-        <h2 id="photo">Photo</h2>
+                <a class="link-card" href="index.txt">
+                    <strong>Text Page</strong>
+                    <span>Open the original plain-text test page.</span>
+                </a>
 
-        <img src="static/images/serbia.png" alt="The best country in the world" width="600">
+                <a class="link-card" href="static/s/colophon.txt">
+                    <strong>Colophon</strong>
+                    <span>Read a short note about how the site was made.</span>
+                </a>
+            </div>
+        </section>
 
-        <h2 id="links">Links</h2>
-
-        <p>
-            <a href="index.txt">My text page?</a>
-        </p>
-
-        <p>
-            <a href="static/s/colophon.txt">Colophon</a>
-        </p>
-
-        <h2 id="updates">Recent Updates include prepairing for Head of the Oklahoma (starting this October)</h2>
-
-        <p>
-            I created my first personal website using HTML and CSS. I am still learning tho....
-        </p>
-
+        <section aria-labelledby="updates-heading">
+            <h2 id="updates-heading">Recent Site Updates</h2>
+            <p>
+                The website has been reorganized into cleaner pages, and the content page has been updated with new playlists and links. The site is still a work in progress, and more updates will be added over time.
+            </p>
+        </section>
     </main>
 
     <footer>
-        <p>This was created by Vojin Kovacevic</p>
+        <p>Personal web development project built with HTML and CSS.</p>
     </footer>
-
 </body>
 </html>
